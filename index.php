@@ -25,25 +25,7 @@ if (isset($_POST['login'])) {
     }
 }
 ?>
-<?php
-if(isset($_POST['answer'])){
 
-};
-
-?>
-<?php
-if ($_POST['answerId']!=''){
-
-  $sql="UPDATE survey_answers SET Answer_Choice='".$_POST["answerChoice"]. "',Answer_Comment='" .$_POST["answerComment"] . "' WHERE Answer_Id='".$_POST["answerId"]." ' ";
-  mysqli_query($link,$sql);
-}else{
-$sql= "INSERT INTO survey_answers(Answer_Choice,Answer_Comment)VALUES ('" . $_POST["answerChoice"] . "','" . $_POST["answerComment"] . "','draft')";
-    mysqli_query($link, $sql);
-    echo mysqli_insert_id($link);
-
-}
-
-?>
 
 <body>
     <div>
