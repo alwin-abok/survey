@@ -474,7 +474,7 @@
 
 
 
-     <p>Après avoir terminé l’enquête, vous pouvez vous <a href="logout.php"><button style="background-color:lightblue;">déconnecter</button></a></p>
+     <p>Après avoir terminé l’enquête, vous pouvez vous <a href="index.php"><button style="background-color:lightblue;">déconnecter</button></a></p>
 
 
 
@@ -526,7 +526,6 @@
                          choice5: $("input[name=choice5]:checked").val(),
                          choice6: $("input[name=choice6]:checked").val(),
                          choice7: $("input[name=choice7]:checked").val(),
-
                          comment7: $("input[name=comment7]").val(),
                          choice8: $("input[name=choice8]:checked").val(),
                          choice9: $("input[name=choice9]:checked").val(),
@@ -535,7 +534,6 @@
                          choice12: $("input[name=choice12]:checked").val(),
                          choice13: $("input[name=choice13]:checked").val(),
                          choice14: choice14.toString(),
-
                          choice15: $("input[name=choice15]:checked").val(),
                          comment15: $("input[name=comment15]").val(),
                          choice16: $("input[name=choice16]:checked").val(),

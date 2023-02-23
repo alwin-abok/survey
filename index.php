@@ -30,7 +30,7 @@ if ($_POST['action']="insert") {
 
 function insert(){
     global $link;
-    $choice1 = $comment1 = $choice2 = $comment2 = $choice3 = $choice4 = $choice5 = $choice6 = $choice7 = $comment7 = $choice8 = $choice9 = $choice10 = $choice11 = $choice12 = $choice13 = $choice14 = $choice15 = $comment15 = $choice16 = $comment16 = $choice17 = $comment17 = '';
+    // $choice1 = $comment1 = $choice2 = $comment2 = $choice3 = $choice4 = $choice5 = $choice6 = $choice7 = $comment7 = $choice8 = $choice9 = $choice10 = $choice11 = $choice12 = $choice13 = $choice14 = $choice15 = $comment15 = $choice16 = $comment16 = $choice17 = $comment17 = '';
     
     $choice1 =$_POST["choice1"];
     $comment1 = $_POST["comment1"];
@@ -57,11 +57,12 @@ function insert(){
     $choice17 = $_POST["choice17"];
     $comment17 = $_POST["comment17"];
 
-$query="INSERT INTO survey_answers (choice1,comment1,choice2,comment2,choice3,comment3,choice4,choice5,choice6,choice7,comment7,choice8,choice9,choice10,choice11,choice12,choice13,choice14,choice15,comment15,choice16,comment16,choice17,comment17) VALUES ('$choice1','$comment1','$choice2','$comment2','$choice3','$comment3','$choice4','$choice5','$choice6','$choice7','$comment7','$choice8','$choice9','$choice10','$choice11','$choice12','$choice13','$choice14','$choice15','$comment15','$choice16','$comment16','$choice17','$comment17')";
+$query="INSERT INTO survey_answers () VALUES ('','$choice1','$comment1','$choice2','$comment2','$choice3','$comment3','$choice4','$choice5','$choice6','$choice7','$comment7','$choice8','$choice9','$choice10','$choice11','$choice12','$choice13','$choice14','$choice15','$comment15','$choice16','$comment16','$choice17','$comment17')";
+// choice1,comment1,choice2,comment2,choice3,comment3,choice4,choice5,choice6,choice7,comment7,choice8,choice9,choice10,choice11,choice12,choice13,choice14,choice15,comment15,choice16,comment16,choice17,comment17
 
      (mysqli_query($link, $query)) ;
     echo 'you have succesfully submitted your survey.thank you!';
-    mysqli_close($link);
+mysqli_close($link);
 }
 ?>
 
