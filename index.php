@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
 ?>
 <?php
 
-$choice1 = $comment1 = $choice2 = $comment2 = $choice3 = $choice4 = $choice5 = $choice6 = $choice7 = $comment7 = $choice8 = $choice9 = $choice10 = $choice11 = $choice12 = $choice13 = $choice14 = $choice15 = $comment15 = $choice16 = $comment16 = $choice17 = $comment17 = '';
+
 if ($_POST['action'] = "insert") {
     insert();
 }
@@ -64,17 +64,16 @@ function insert()
 
 
     if (mysqli_query($link, $query)) {
-        header('location:index.php');
+        // header('location:index.php');
         mysqli_close($link);
-
-    } 
+    }
 }
 ?>
 
 <body>
     <div id="main">
         <div>
-            <h3>Connectez-vous ou inscrivez-vous pour répondre à notre dernier sondage sur l’IA! </h3>
+            <h3 style="color:yellow">Connectez-vous ou inscrivez-vous pour répondre à notre dernier sondage sur l’IA! </h3>
         </div>
         <div>
             <select style="width:250px" style="margin-right:200px" ,color="lightgreen">

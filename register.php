@@ -4,29 +4,29 @@ include('./templates/head.php')
 
 <body>
     <div id="main">
-    <h5>Inscrivez-vous pour continuer</h5>
-    <div>
-        <!-- banner form -->
-        <form action="" name="submit" method="post">
+        <h5 style="color:yellow">Inscrivez-vous pour continuer</h5>
+        <div>
+            <!-- banner form -->
+            <form action="" name="submit" method="post">
 
-            <div>
-                <label>Prénom</label><br>
-                <input name="FirstName" type="text"><br>
-                <label>NomNom</label><br>
-                <input name='LastName' type="text"><br>
-                <label for="">Nom d’utilisateur</label><br>
-                <input type="text" name="UserName"><br>
-                <label> Contact</label><br>
-                <input name='Contact' type="text"><br>
-                <label>Messagerie électronique </label><br>
-                <input name="Email" type="email"><br>
-                <label>Mot de passe</label><br>
-                <input name="Password" type="password"><br>
-                <button type="submit" name="submit"> Démarrer</button><br>
-                <span>En vous inscrivant, vous acceptez notre<a href="#">Termes et conditions.</a></span>
-            </div>
-        </form>
-    </div>
+                <div>
+                    <label style="color:yellow">Prénom</label><br>
+                    <input name="FirstName" type="text"><br>
+                    <label style="color:yellow">NomNom</label><br>
+                    <input name='LastName' type="text"><br>
+                    <label for="" style="color:yellow">Nom d’utilisateur</label><br>
+                    <input type="text" name="UserName"><br>
+                    <label style="color:yellow"> Contact</label><br>
+                    <input name='Contact' type="text"><br>
+                    <label style="color:yellow">Messagerie électronique </label><br>
+                    <input name="Email" type="email"><br>
+                    <label style="color:yellow">Mot de passe</label><br>
+                    <input name="Password" type="password"><br>
+                    <button style="background-color:green" type="submit" name="submit"> Démarrer</button><br>
+                    <span style="color:blue">En vous inscrivant, vous acceptez notre<a href="#">Termes et conditions*</a></span>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 <?php
@@ -72,6 +72,5 @@ if (isset($_POST['submit'])) {
     }
     header('Location: survey.php');
     mysqli_close($link);
-
 };
 ?>

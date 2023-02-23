@@ -12,10 +12,9 @@
 </head>
 
 <body>
-    <div id="logo">
-        <nav>
-            <a href="index.php">Domicile</a>
-            <a href="register.php">Soutien</a>
-            <a href="admin.php">Admin</a>
-        </nav>
+    <div id="logo"style="display:inline-block;align-items:'center'">
+            <a href="index.php"><h4>Domicile</h4></a>
+            <a href="register.php"><h4>Soutien</h4></a>
+            <a href="admin.php"><h4>Admin</h4></a>
+        
     </div>
