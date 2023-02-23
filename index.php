@@ -30,8 +30,8 @@ if ($_POST['action'] = "insert") {
 function insert()
 {
     global $link;
-    $success = "You have successfully registered";
-    $error = "Error while registering";
+    // $success = "You have successfully registered";
+    // $error = "Error while registering";
 
 
     $choice1 = $_POST["choice1"];
@@ -61,45 +61,46 @@ function insert()
 
 
     $query = "INSERT INTO survey_answers () VALUES ('','$choice1','$comment1','$choice2','$comment2','$choice3','$comment3','$choice4','$choice5','$choice6','$choice7','$comment7','$choice8','$choice9','$choice10','$choice11','$choice12','$choice13','$choice14','$choice15','$comment15','$choice16','$comment16','$choice17','$comment17')";
-    
+
 
     if (mysqli_query($link, $query)) {
-        echo ($success);
+        // echo ($success);
     } else {
-        echo ($error);
+        // echo ($error);
     }
     mysqli_close($link);
 }
 ?>
 
 <body>
-    <div>
-        <h3>Connectez-vous ou inscrivez-vous pour répondre à notre dernier sondage sur l’IA! </h3>
-    </div>
-    <div>
-        <select style="width:250px" style="margin-right:200px" ,color="lightgreen">
-            <option selected>Sélectionner une langue</option>
-            <option value="1">English</option>
-            <option value="2">Francais</option>
-            <option value="3">Arabe'</option>
-        </select>
-    </div>
-    <div id="login">
-        <form action="" method="post" name="login">
-            <label>Nom d’utilisateur</label><br>
-            <input type="text" name="UserName"><br>
-            <label>Mot de passe</label><br>
-            <input type="password" name="Password"><br>
-            <button type="submit" name="login">s'identifier</button>
+    <div id="main">
+        <div>
+            <h3>Connectez-vous ou inscrivez-vous pour répondre à notre dernier sondage sur l’IA! </h3>
+        </div>
+        <div>
+            <select style="width:250px" style="margin-right:200px" ,color="lightgreen">
+                <option selected>Sélectionner une langue</option>
+                <option value="1">English</option>
+                <option value="2">Francais</option>
+                <option value="3">Arabe'</option>
+            </select>
+        </div>
+        <div id="login">
+            <form action="" method="post" name="login">
+                <label>Nom d’utilisateur</label><br>
+                <input type="text" name="UserName"><br>
+                <label>Mot de passe</label><br>
+                <input type="password" name="Password"><br>
+                <button type="submit" name="login">s'identifier</button>
 
-        </form>
+            </form>
+        </div>
+        <br>
+        <h4>ou</h4> <br>
+        <div id="signup">
+            <a href="register.php"> <button type="submit">S’enregistrer</button></a>
+        </div>
     </div>
-    <br>
-    <h4>ou</h4> <br>
-    <div id="signup">
-        <a href="register.php"> <button type="submit">S’enregistrer</button></a>
-    </div>
-
 </body>
 <?php
 include('./templates/foot.php');

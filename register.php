@@ -3,6 +3,7 @@ include('./templates/head.php')
 ?>
 
 <body>
+    <div id="main">
     <h5>Inscrivez-vous pour continuer</h5>
     <div>
         <!-- banner form -->
@@ -25,6 +26,7 @@ include('./templates/head.php')
                 <span>En vous inscrivant, vous acceptez notre<a href="#">Termes et conditions.</a></span>
             </div>
         </form>
+    </div>
     </div>
 </body>
 <?php

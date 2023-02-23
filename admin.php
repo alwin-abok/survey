@@ -1,6 +1,7 @@
 <?php
 include('./templates/head.php');
 include('./connect.php');
+error_reporting(0);
 $sql = 'SELECT answer_Id,choice1 ,comment1 ,choice2,comment2 choice3 ,choice4 ,choice5,choice6 ,choice7 ,comment7 ,choice8 ,choice9,choice10 ,choice11 ,choice12 ,choice13 ,choice14,choice15 ,comment15,choice16 ,comment16 ,choice17,comment17 FROM survey_answers ';
 
 $result = mysqli_query($link, $sql);
@@ -10,6 +11,7 @@ mysqli_close($link)
 ?>
 
 <body>
+    <div id="main">
     <div id="login">
         <form action="" method="post" name="form2">
             <label>Username</label><br>
@@ -59,6 +61,7 @@ mysqli_close($link)
         </div>
 
 
+    </div>
     </div>
 </body>
 <?php

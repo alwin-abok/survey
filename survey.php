@@ -41,7 +41,7 @@
 
                                      <div class="form-group">
                                          <label for="comment1">Exemples de preuve:Expression des besoins,Specifications</label>
-                                         <input name='comment1' required value='' placeholder='Entrez votre réponse'></input>
+                                         <input name='comment1'  value='' placeholder='Entrez votre réponse'></input>
                                      </div>
 
                                  </div>
@@ -68,7 +68,7 @@
 
                                      <div class="form-group">
                                          <label for="comment">preuve</label>
-                                         <input name='comment2' required value='' type="text" placeholder='Entrez votre réponse'></input>
+                                         <input name='comment2'  value='' type="text" placeholder='Entrez votre réponse'></input>
                                      </div>
 
                                  </div>
@@ -98,7 +98,7 @@
                                  </div>
                                  <div class="form-group">
                                      <label for="comment">Précision</label>
-                                     <input name='comment3' type="text" required value='' placeholder='Entrez votre réponse'></input>
+                                     <input name='comment3' type="text"  value='' placeholder='Entrez votre réponse'></input>
                                  </div>
 
                              </div>
@@ -473,10 +473,8 @@
 
 
 
-     <p>Après avoir terminé l’enquête, vous pouvez vous <a href="index.php"><button style="background-color:lightblue;"></button></a></p>
-     <a href="index.php">
-         <h4><i><button>déconnecter</button></i></h4>
-     </a>
+     <p>Après avoir terminé l’enquête, vous pouvez vous </p>
+     <a href="index.php"><h4><i><button>déconnecter</button></i></h4></a>
 
 
 
