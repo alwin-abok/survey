@@ -1,5 +1,5 @@
 <?php
-session_start();
-header('Location: index.php');
+
+header('Location: logout.php');
 echo "thank you for taking the survey";
 ?>
