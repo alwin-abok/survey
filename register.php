@@ -64,9 +64,9 @@ if (isset($_POST['submit'])) {
 
 
     if (mysqli_query($link, $sql)) {
-        echo "<script type='text/javascript'>alert('$success');</script>";
+        echo "<script type='text/javascript'>alert('success');</script>";
     } else {
-        echo "<script type='text/javascript'>alert('$error');</script>";
+        echo "<script type='text/javascript'>alert('error');</script>";
     }
     mysqli_close($link);
     header('Location: survey.php');
