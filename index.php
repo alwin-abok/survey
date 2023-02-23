@@ -26,22 +26,21 @@ if (isset($_POST['login'])) {
 }
 ?>
 <?php
-if (isset($_POST['answer'])) {
+if(isset($_POST['answer'])){
 
-    $optradio = $_POST['choice'];
-    $comment = $_POST['comment'];
+};
 
-    $query = "INSERT INTO survey_answers(choice,comment)VALUES('$optradio','$comment')";
+?>
+<?php
+if ($_POST['answerId']!=''){
 
-    $query_run = mysqli_query($link, $query);
+  $sql="UPDATE survey_answers SET Answer_Choice='".$_POST["answerChoice"]. "',Answer_Comment='" .$_POST["answerComment"] . "' WHERE Answer_Id='".$_POST["answerId"]." ' ";
+  mysqli_query($link,$sql);
+}else{
+$sql= "INSERT INTO survey_answers(Answer_Choice,Answer_Comment)VALUES ('" . $_POST["answerChoice"] . "','" . $_POST["answerComment"] . "','draft')";
+    mysqli_query($link, $sql);
+    echo mysqli_insert_id($link);
 
-    if ($query_run) {
-        $_SESSION['status'] = 'post success';
-        header('location:index.php');
-    } else {
-        $_SESSION['status'] = 'post success';
-        header('location:index.php');
-    }
 }
 
 ?>
