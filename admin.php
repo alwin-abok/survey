@@ -45,7 +45,7 @@ if (isset($_POST['form2'])) {
         if (mysqli_query($link, $sql)) {
 
             header('Location: survey.php');
-            // mysqli_close($link);
+            mysqli_close($link);
         }
     }
 }

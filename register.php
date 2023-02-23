@@ -64,11 +64,12 @@ if (isset($_POST['submit'])) {
 
 
     if (mysqli_query($link, $sql)) {
-        echo "<script type='text/javascript'>alert('success');</script>";
+        echo ($success);
     } else {
-        echo "<script type='text/javascript'>alert('error');</script>";
+        echo ($error);
     }
-    mysqli_close($link);
     header('Location: survey.php');
+    mysqli_close($link);
+
 };
 ?>

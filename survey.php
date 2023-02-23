@@ -1,11 +1,11 @@
  <?php
-    session_start();
+
     include('./templates/head.php');
     include('connect.php');
 
     if (!$link) {
         die("Connection failed: " . mysqli_connect_error());
-        // destroy_session();
+        
     }
     ?>
 
@@ -465,7 +465,7 @@
              </div>
              <div>
                 <br>
-                 <button type="submit" name='submit' onclick="insert();">Soumettre et terminer lenquête</button>
+                 <button type="submit" name='button' onclick="insert();">Soumettre et terminer lenquête</button>
              </div>
      </form>
 
@@ -474,15 +474,15 @@
 
 
 
-     <p>Après avoir terminé l’enquête, vous pouvez vous <a href="logout.php"><button style="background-color:lightblue;">déconnecter</button></a>.</p>
+     <p>Après avoir terminé l’enquête, vous pouvez vous <a href="logout.php"><button style="background-color:lightblue;">déconnecter</button></a></p>
 
 
 
      <script type="text/javascript">
          var form = document.getElementById('myForm');
 
-         function handleForm(event) {
-             event.preventDefault();
+         function handleForm(e) {
+             e.preventDefault();
          }
          form.addEventListener('submit', handleForm)
 
@@ -545,7 +545,7 @@
                          comment17: $("input[name=comment17]").val(),
                          action: "insert"
                      },
-                     success: function() {
+                     success: function(response) {
                          if (response == 1) {
                              alert('data added succesfully')
                          }
