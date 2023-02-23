@@ -271,62 +271,16 @@
 
 
 
-         <div class="col-sm-6">
-             <div class="card">
-                 <div class="card-body">
-                     <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                         <div class="card-body">
-                             <p class="card-text">Les personnes physiques en charge du development du système ont-elle la formation adequate?</p>
-                             <div class="radio">
-                                 <label><input type="radio" name="choice11" value="yes" required> Oui </label>
-                                 <div class="radio">
-                                     <label><input type="radio" name="choice11" value="no"> Non</label>
-                                 </div>
-                             </div>
-
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-
-
-         <div class="col-sm-6">
-             <div class="card">
-                 <div class="card-body">
-                     <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-
-                         <div class="card-body">
-                             <p class="card-text">Les personnes en charge du maintien du système d'IA ,de la correction des problèmes et de l'intervention sur son fonctionnement sont-elles clairement identifiées et connues de tous?</p>
-                             <div class="radio">
-                                 <label><input type="radio" name="choice12" value="yes" required> Oui </label>
-                                 <div class="radio">
-                                     <label><input type="radio" name="choice12" value="no"> Non</label>
-                                 </div>
-                             </div>
-
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-
-
-
-
-         <div class="row">
-
              <div class="col-sm-6">
                  <div class="card">
                      <div class="card-body">
-                         <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-
+                         <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
                              <div class="card-body">
-                                 <p class="card-text">Un suivi est-il effectue afin d'assurer une permanence de ce service,par exemple en période de conges?</p>
+                                 <p class="card-text">Les personnes physiques en charge du development du système ont-elle la formation adequate?</p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice13" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice11" value="yes" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice13" value="no"> Non</label>
+                                         <label><input type="radio" name="choice11" value="no"> Non</label>
                                      </div>
                                  </div>
 
@@ -336,82 +290,20 @@
                  </div>
              </div>
 
-
-             <div class="col-sm-6">
-                 <div class="card">
-                     <div class="card-body">
-                         <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                             <div class="card-body">
-                                 <p class="card-text">quel type d'algorithme est utilise?
-
-                                 <div class="checkbox">
-                                     <label><input type="checkbox" name="choice14"  value="Apprentissage supervise"> Apprentissage supervise
-                                     </label>
-                                     <label><input type="checkbox" name="choice14" value="Apprentissage non-supervise"> Apprentissage non-supervise
-                                     </label>
-                                     <label><input type="checkbox" name="choice14" checked value="Apprentissage par renforcement">Apprentissage par renforcement
-                                     </label>
-                                     <label><input type="checkbox" name="choice14" value="Apprentissage continu"> Apprentissage continu
-                                     </label>
-                                     <label><input type="checkbox" name="choice14" value="Apprentissage fédéré"> Apprentissage fédéré
-                                     </label>
-                                 </div>
-
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-
-         </div>
-
-
-
-         <div class="row">
 
              <div class="col-sm-6">
                  <div class="card">
                      <div class="card-body">
                          <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                             <div class="card-body">
-                                 <p class="card-text">Des libraries Open Source on-elles été utilises ? Si oui lesquelles?
-                                 <div class="radio">
-                                     <label><input type="radio" name="choice15" value="yes" required> Oui </label>
-                                 </div>
-                                 <div class="radio">
-                                     <label><input type="radio" name="choice15" value="no">Non
-                                     </label>
-                                 </div>
-
-                                 <div class="form-group">
-                                     <label for="comment"> </label>
-                                     <input name='comment15' type="text" required value='' placeholder='Entrez votre réponse'></input>
-                                 </div>
-
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-
-
-             <div class="col-sm-6">
-                 <div class="card">
-                     <div class="card-body">
-                         <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
 
                              <div class="card-body">
-                                 <p class="card-text">Des strategies telles que par exemple la validation croisée sont elles utilises?</p>
+                                 <p class="card-text">Les personnes en charge du maintien du système d'IA ,de la correction des problèmes et de l'intervention sur son fonctionnement sont-elles clairement identifiées et connues de tous?</p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice16" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice12" value="yes" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice16" value="no"> Non</label>
+                                         <label><input type="radio" name="choice12" value="no"> Non</label>
                                      </div>
                                  </div>
-                                 <div class="form-group">
-                                     <label for="comment">Précision</label>
-                                     <input name='comment16' type="text" required value='' placeholder='Entrez votre réponse'></input>
-                                 </div>
 
                              </div>
                          </div>
@@ -419,53 +311,162 @@
                  </div>
              </div>
 
-         </div>
 
 
 
-         <div class="row">
+             <div class="row">
 
-             <div class="col-sm-6">
-                 <div class="card">
-                     <div class="card-body">
-                         <a href="index.php">
-                             <h4><i>Découvrez d’autres sondages!</i></h4>
-                         </a>
+                 <div class="col-sm-6">
+                     <div class="card">
+                         <div class="card-body">
+                             <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
 
-                     </div>
-                 </div>
-             </div>
-
-
-             <div class="col-sm-6">
-                 <div class="card">
-                     <div class="card-body">
-                         <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-
-                             <div class="card-body">
-                                 <p class="card-text">Les métriques permettent-elles de mesurer la performance du système de maniéré satisfaisante et en prenant en compte les consequences pour les personnes concernées?</p>
-                                 <div class="radio">
-                                     <label><input type="radio" name="choice17" value="yes" required> Oui </label>
+                                 <div class="card-body">
+                                     <p class="card-text">Un suivi est-il effectue afin d'assurer une permanence de ce service,par exemple en période de conges?</p>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice17" value="no"> Non</label>
+                                         <label><input type="radio" name="choice13" value="yes" required> Oui </label>
+                                         <div class="radio">
+                                             <label><input type="radio" name="choice13" value="no"> Non</label>
+                                         </div>
                                      </div>
-                                 </div>
-                                 <div class="form-group">
-                                     <label for="comment">Précision</label>
-                                     <input type="text" name='comment17' required value='' placeholder='Entrez votre réponse'></input>
-                                 </div>
 
+                                 </div>
                              </div>
                          </div>
                      </div>
                  </div>
+
+
+                 <div class="col-sm-6">
+                     <div class="card">
+                         <div class="card-body">
+                             <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                 <div class="card-body">
+                                     <p class="card-text">quel type d'algorithme est utilise?
+
+                                     <div class="checkbox">
+                                         <label><input type="checkbox" name="choice14" value="Apprentissage supervise"> Apprentissage supervise
+                                         </label>
+                                         <label><input type="checkbox" name="choice14" value="Apprentissage non-supervise"> Apprentissage non-supervise
+                                         </label>
+                                         <label><input type="checkbox" name="choice14" checked value="Apprentissage par renforcement">Apprentissage par renforcement
+                                         </label>
+                                         <label><input type="checkbox" name="choice14" value="Apprentissage continu"> Apprentissage continu
+                                         </label>
+                                         <label><input type="checkbox" name="choice14" value="Apprentissage fédéré"> Apprentissage fédéré
+                                         </label>
+                                     </div>
+
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
              </div>
 
 
-         </div>
-         <div>
-             <button type="submit" name='button' onclick="insert();">Soumettre et terminer l’enquête</button>
-         </div>
+
+             <div class="row">
+
+                 <div class="col-sm-6">
+                     <div class="card">
+                         <div class="card-body">
+                             <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                 <div class="card-body">
+                                     <p class="card-text">Des libraries Open Source on-elles été utilises ? Si oui lesquelles?
+                                     <div class="radio">
+                                         <label><input type="radio" name="choice15" value="yes" required> Oui </label>
+                                     </div>
+                                     <div class="radio">
+                                         <label><input type="radio" name="choice15" value="no">Non
+                                         </label>
+                                     </div>
+
+                                     <div class="form-group">
+                                         <label for="comment"> </label>
+                                         <input name='comment15' type="text" required value='' placeholder='Entrez votre réponse'></input>
+                                     </div>
+
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+                 <div class="col-sm-6">
+                     <div class="card">
+                         <div class="card-body">
+                             <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+
+                                 <div class="card-body">
+                                     <p class="card-text">Des strategies telles que par exemple la validation croisée sont elles utilises?</p>
+                                     <div class="radio">
+                                         <label><input type="radio" name="choice16" value="yes" required> Oui </label>
+                                         <div class="radio">
+                                             <label><input type="radio" name="choice16" value="no"> Non</label>
+                                         </div>
+                                     </div>
+                                     <div class="form-group">
+                                         <label for="comment">Précision</label>
+                                         <input name='comment16' type="text" required value='' placeholder='Entrez votre réponse'></input>
+                                     </div>
+
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+             </div>
+
+
+
+             <div class="row">
+
+                 <div class="col-sm-6">
+                     <div class="card">
+                         <div class="card-body">
+                             <a href="index.php">
+                                 <h4><i>Découvrez d’autres sondages!</i></h4>
+                             </a>
+
+                         </div>
+                     </div>
+                 </div>
+
+
+                 <div class="col-sm-6">
+                     <div class="card">
+                         <div class="card-body">
+                             <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+
+                                 <div class="card-body">
+                                     <p class="card-text">Les métriques permettent-elles de mesurer la performance du système de maniéré satisfaisante et en prenant en compte les consequences pour les personnes concernées?</p>
+                                     <div class="radio">
+                                         <label><input type="radio" name="choice17" value="yes" required> Oui </label>
+                                         <div class="radio">
+                                             <label><input type="radio" name="choice17" value="no"> Non</label>
+                                         </div>
+                                     </div>
+                                     <div class="form-group">
+                                         <label for="comment">Précision</label>
+                                         <input type="text" name='comment17' required value='' placeholder='Entrez votre réponse'></input>
+                                     </div>
+
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+             </div>
+             <div>
+                <br>
+                 <button type="submit" name='submit' onclick="insert();">Soumettre et terminer lenquête</button>
+             </div>
      </form>
 
 
@@ -544,7 +545,7 @@
                          comment17: $("input[name=comment17]").val(),
                          action: "insert"
                      },
-                     succes: function() {
+                     success: function() {
                          if (response == 1) {
                              alert('data added succesfully')
                          }
