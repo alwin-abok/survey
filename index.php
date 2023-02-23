@@ -64,11 +64,10 @@ function insert()
 
 
     if (mysqli_query($link, $query)) {
-        // echo ($success);
-    } else {
-        // echo ($error);
-    }
-    mysqli_close($link);
+        header('location:index.php');
+        mysqli_close($link);
+
+    } 
 }
 ?>
 

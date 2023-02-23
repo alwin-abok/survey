@@ -12,7 +12,12 @@
  <body>
      <h2>Enquête sur l’IA</h2>
      <p>.Ci-dessous, les utilisateurs peuvent exprimer leurs points de vue sur certaines des questions.</p>
-
+     <div>
+         <p>Après avoir terminé l’enquête, vous pouvez vous </p>
+         <a href="index.php">
+             <h4><i><button style="background-color:aqua">déconnecter</button></i></h4>
+         </a>
+     </div>
 
 
      <form id="myForm" action="" method="post" autocomplete="off">
@@ -41,7 +46,7 @@
 
                                      <div class="form-group">
                                          <label for="comment1">Exemples de preuve:Expression des besoins,Specifications</label>
-                                         <input name='comment1'  value='' placeholder='Entrez votre réponse'></input>
+                                         <input name='comment1' value='' placeholder='Entrez votre réponse'></input>
                                      </div>
 
                                  </div>
@@ -68,7 +73,7 @@
 
                                      <div class="form-group">
                                          <label for="comment">preuve</label>
-                                         <input name='comment2'  value='' type="text" placeholder='Entrez votre réponse'></input>
+                                         <input name='comment2' value='' type="text" placeholder='Entrez votre réponse'></input>
                                      </div>
 
                                  </div>
@@ -91,14 +96,14 @@
                              <div class="card-body">
                                  <p class="card-text">Quelle métriques son utilisées pour juger de la qualité des sorties du système d'IA?</p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice3" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice3" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice3" value="no"> Non</label>
+                                         <label><input type="radio" name="choice3" value="non"> Non</label>
                                      </div>
                                  </div>
                                  <div class="form-group">
                                      <label for="comment">Précision</label>
-                                     <input name='comment3' type="text"  value='' placeholder='Entrez votre réponse'></input>
+                                     <input name='comment3' type="text" value='' placeholder='Entrez votre réponse'></input>
                                  </div>
 
                              </div>
@@ -116,9 +121,9 @@
                              <div class="card-body">
                                  <p class="card-text">Des données personnelles sont-elles traitées par le système? </p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice4" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice4" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice4" value="no"> Non</label>
+                                         <label><input type="radio" name="choice4" value="non"> Non</label>
                                      </div>
                                  </div>
 
@@ -142,9 +147,9 @@
                              <div class="card-body">
                                  <p class="card-text">Le traitement pourra-t-il viser directement ou indirectement des personnes vulnérables(par ex:enfants,patients, employés)? </p>
                                  <div class="radio">
-                                     <input type="radio" name="choice5" value="yes" required> Oui </input>
+                                     <input type="radio" name="choice5" value="oui" required> Oui </input>
                                      <div class="radio">
-                                         <input type="radio" name="choice5" value="no"> Non</input>
+                                         <input type="radio" name="choice5" value="non"> Non</input>
                                      </div>
                                  </div>
 
@@ -163,9 +168,9 @@
                              <div class="card-body">
                                  <p class="card-text">Le traitement pourra-t-il entraîner des consequences juridiques, financiers ou physiques sur la sante, le statut ou la sécurité des personnes visées directement ou indirectement par le système d' IA?</p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice6" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice6" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice6" value="no"> Non</label>
+                                         <label><input type="radio" name="choice6" value="non"> Non</label>
                                      </div>
                                  </div>
 
@@ -186,9 +191,9 @@
                              <div class="card-body">
                                  <p class="card-text">Les caractéristiques(age, genre, spécificités physiques, etc.) des personnes concernées par le système d'IA ont-elles été étudiées?</p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice7" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice7" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice7" value="no"> Non</label>
+                                         <label><input type="radio" name="choice7" value="non"> Non</label>
                                      </div>
                                  </div>
                                  <div class="form-group">
@@ -212,9 +217,9 @@
                                  <p class="card-text">Exist-t-il une charte ou politique interne encadrant la conception et le déploiement de système s'IA?
 
                                  <div class="radio">
-                                     <label><input type="radio" name="choice8" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice8" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice8" value="no"> Non</label>
+                                         <label><input type="radio" name="choice8" value="non"> Non</label>
                                      </div>
                                  </div>
 
@@ -236,9 +241,9 @@
                                  <p class="card-text">Les personnes impliquées dans la conception, développement et maintenance du système d'IA ont-elles été sensibilisées aux enjeux juridiques, techniques, éthiques et moraux de l'IA?</p>
 
                                  <div class="radio">
-                                     <label><input type="radio" name="choice9" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice9" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice9" value="no"> Non</label>
+                                         <label><input type="radio" name="choice9" value="non"> Non</label>
                                      </div>
                                  </div>
 
@@ -257,9 +262,9 @@
                                  <p class="card-text">Les personnes en charge développement du système d'IA ,de son déploiement et de son contrôle sont-elles clairement définies?</p>
                              </div>
                              <div class="radio">
-                                 <label><input type="radio" name="choice10" value="yes" required> Oui </label>
+                                 <label><input type="radio" name="choice10" value="oui" required> Oui </label>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice10" value="no"> Non</label>
+                                     <label><input type="radio" name="choice10" value="non"> Non</label>
                                  </div>
                              </div>
 
@@ -277,9 +282,9 @@
                              <div class="card-body">
                                  <p class="card-text">Les personnes physiques en charge du development du système ont-elle la formation adequate?</p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice11" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice11" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice11" value="no"> Non</label>
+                                         <label><input type="radio" name="choice11" value="non"> Non</label>
                                      </div>
                                  </div>
 
@@ -298,9 +303,9 @@
                              <div class="card-body">
                                  <p class="card-text">Les personnes en charge du maintien du système d'IA ,de la correction des problèmes et de l'intervention sur son fonctionnement sont-elles clairement identifiées et connues de tous?</p>
                                  <div class="radio">
-                                     <label><input type="radio" name="choice12" value="yes" required> Oui </label>
+                                     <label><input type="radio" name="choice12" value="oui" required> Oui </label>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice12" value="no"> Non</label>
+                                         <label><input type="radio" name="choice12" value="non"> Non</label>
                                      </div>
                                  </div>
 
@@ -323,9 +328,9 @@
                                  <div class="card-body">
                                      <p class="card-text">Un suivi est-il effectue afin d'assurer une permanence de ce service,par exemple en période de conges?</p>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice13" value="yes" required> Oui </label>
+                                         <label><input type="radio" name="choice13" value="oui" required> Oui </label>
                                          <div class="radio">
-                                             <label><input type="radio" name="choice13" value="no"> Non</label>
+                                             <label><input type="radio" name="choice13" value="non"> Non</label>
                                          </div>
                                      </div>
 
@@ -375,10 +380,10 @@
                                  <div class="card-body">
                                      <p class="card-text">Des libraries Open Source on-elles été utilises ? Si oui lesquelles?
                                      <div class="radio">
-                                         <label><input type="radio" name="choice15" value="yes" required> Oui </label>
+                                         <label><input type="radio" name="choice15" value="oui" required> Oui </label>
                                      </div>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice15" value="no">Non
+                                         <label><input type="radio" name="choice15" value="non">Non
                                          </label>
                                      </div>
 
@@ -402,9 +407,9 @@
                                  <div class="card-body">
                                      <p class="card-text">Des strategies telles que par exemple la validation croisée sont elles utilises?</p>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice16" value="yes" required> Oui </label>
+                                         <label><input type="radio" name="choice16" value="oui" required> Oui </label>
                                          <div class="radio">
-                                             <label><input type="radio" name="choice16" value="no"> Non</label>
+                                             <label><input type="radio" name="choice16" value="non"> Non</label>
                                          </div>
                                      </div>
                                      <div class="form-group">
@@ -426,7 +431,7 @@
 
                  <div class="col-sm-6">
                      <div class="card">
-                         <div class="card-body">
+                         <div class="card-body" style="background-color: pink;">
                              <a href="index.php">
                                  <h4><i>Découvrez d’autres sondages!</i></h4>
                              </a>
@@ -444,9 +449,9 @@
                                  <div class="card-body">
                                      <p class="card-text">Les métriques permettent-elles de mesurer la performance du système de maniéré satisfaisante et en prenant en compte les consequences pour les personnes concernées?</p>
                                      <div class="radio">
-                                         <label><input type="radio" name="choice17" value="yes" required> Oui </label>
+                                         <label><input type="radio" name="choice17" value="oui" required> Oui </label>
                                          <div class="radio">
-                                             <label><input type="radio" name="choice17" value="no"> Non</label>
+                                             <label><input type="radio" name="choice17" value="non"> Non</label>
                                          </div>
                                      </div>
                                      <div class="form-group">
@@ -464,18 +469,10 @@
              </div>
              <div>
                  <br>
-                 <button type="submit" name='button' onclick="insert();">Soumettre et terminer lenquête</button>
-             </div>
+                 <div>
+                     <button style="background-color: pink;" type="submit" name='button' onclick="insert();">Soumettre et terminer lenquête</button>
+                 </div>
      </form>
-
-
-
-
-
-
-     <p>Après avoir terminé l’enquête, vous pouvez vous </p>
-     <a href="index.php"><h4><i><button>déconnecter</button></i></h4></a>
-
 
 
      <script type="text/javascript">
@@ -546,6 +543,7 @@
                      success: function(response) {
                          if (response == 1) {
                              alert('data added succesfully')
+                             header('location:index.php');
                          }
                      }
                  })
