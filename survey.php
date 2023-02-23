@@ -204,7 +204,6 @@
              </div>
 
 
-             <form action="indexx.php" method="post">
 
                  <div class="col-sm-6">
                      <div class="card">
@@ -273,7 +272,6 @@
          </div>
 
 
-         <form action="index.php" method="post">
 
              <div class="col-sm-6">
                  <div class="card">
@@ -315,7 +313,7 @@
                  </div>
              </div>
 
-             </div>
+            
 
 
              <div class="row">
@@ -477,7 +475,7 @@
 
 
 
-         Après avoir terminé l’enquête, vous pouvez vous <a href="logout.php"><button style="background-color:lightblue;">déconnecter</button></a>.</p>
+        <p>Après avoir terminé l’enquête, vous pouvez vous <a href="logout.php"><button style="background-color:lightblue;">déconnecter</button></a>.</p>
 
 
 
