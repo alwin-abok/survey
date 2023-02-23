@@ -5,7 +5,6 @@
 
     if (!$link) {
         die("Connection failed: " . mysqli_connect_error());
-        
     }
     ?>
 
@@ -464,7 +463,7 @@
 
              </div>
              <div>
-                <br>
+                 <br>
                  <button type="submit" name='button' onclick="insert();">Soumettre et terminer lenquête</button>
              </div>
      </form>
@@ -474,7 +473,10 @@
 
 
 
-     <p>Après avoir terminé l’enquête, vous pouvez vous <a href="index.php"><button style="background-color:lightblue;">déconnecter</button></a></p>
+     <p>Après avoir terminé l’enquête, vous pouvez vous <a href="index.php"><button style="background-color:lightblue;"></button></a></p>
+     <a href="index.php">
+         <h4><i><button>déconnecter</button></i></h4>
+     </a>
 
 
 

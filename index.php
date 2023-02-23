@@ -61,14 +61,14 @@ function insert()
 
 
     $query = "INSERT INTO survey_answers () VALUES ('','$choice1','$comment1','$choice2','$comment2','$choice3','$comment3','$choice4','$choice5','$choice6','$choice7','$comment7','$choice8','$choice9','$choice10','$choice11','$choice12','$choice13','$choice14','$choice15','$comment15','$choice16','$comment16','$choice17','$comment17')";
-    // choice1,comment1,choice2,comment2,choice3,comment3,choice4,choice5,choice6,choice7,comment7,choice8,choice9,choice10,choice11,choice12,choice13,choice14,choice15,comment15,choice16,comment16,choice17,comment17
+    
 
     if (mysqli_query($link, $query)) {
         echo ($success);
     } else {
         echo ($error);
     }
-    // mysqli_close($link);
+    mysqli_close($link);
 }
 ?>
 

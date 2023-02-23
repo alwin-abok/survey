@@ -37,7 +37,24 @@
     margin-bottom: 10px;
 }
 
-
+#creams{
+     margin: 10px;
+    width: 100%;
+    height: 200px;
+    background-color:lightpink;
+    padding: 10px;
+    overflow: scroll;
+}
+.boxes{
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    background-color:lightgreen;
+    padding: 10px;
+    /* overflow: scroll; */
+    float: left;
+    justify-content: center;
+}
 #contacts{
   
     width: 100%;
