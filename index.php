@@ -13,11 +13,7 @@ if (isset($_POST['login'])) {
     $count = mysqli_num_rows($res);
 
     if ($count == 0) {
-?>
-        <script>
-            document.getElementById('errormsg').style.display = 'block'
-        </script>
-<?php
+echo'incorrect username or password';
     } else {
         if (mysqli_query($link, $sql)) {
             header('Location: survey.php');
@@ -60,7 +56,9 @@ function insert(){
 
 $query="INSERT INTO survey_answers VALUES('','$choice1','$comment1','$choice2','$comment2','$choice3','$comment3','$choice4','$choice5',v'$choice6','$choice7','$comment7','$choice8','$choice9','$choice10','$choice11','$choice12','$choice13','$choice14','$choice15','$comment15','$choice16','$comment16','$choice17','$comment17')";
 
-mysqli_query($link,$query);
+    if (mysqli_query($link, $query)) {
+        header('Location: survey.php');
+    }
 }
 ?>
 

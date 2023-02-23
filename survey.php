@@ -345,7 +345,7 @@
                                  <p class="card-text">quel type d'algorithme est utilise?
 
                                  <div class="checkbox">
-                                     <label><input type="checkbox" name="choice14" required value="Apprentissage supervise"> Apprentissage supervise
+                                     <label><input type="checkbox" name="choice14"  value="Apprentissage supervise"> Apprentissage supervise
                                      </label>
                                      <label><input type="checkbox" name="choice14" value="Apprentissage non-supervise"> Apprentissage non-supervise
                                      </label>
