@@ -2,7 +2,7 @@
 include('./templates/head.php');
 include('./connect.php');
 error_reporting(0);
-$sql = 'SELECT answer_Id,choice1 ,comment1 ,choice2,comment2 choice3 ,choice4 ,choice5,choice6 ,choice7 ,comment7 ,choice8 ,choice9,choice10 ,choice11 ,choice12 ,choice13 ,choice14,choice15 ,comment15,choice16 ,comment16 ,choice17,comment17 FROM survey_answers ';
+$sql = 'SELECT * FROM survey_answers ';
 
 $result = mysqli_query($link, $sql);
 $survey_answers = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -31,8 +31,8 @@ mysqli_close($link)
             <div class="boxes2">
                 <?php foreach ($survey_answers as $answer) : ?>
                     <div class="boxes">
-                        <h4><?php echo $answer['Answer_Id']; ?></h4>
-                        <h5><?php echo $answer['Choice1']; ?></h5>
+                        <h4><?php echo $answer?> ;</h4>
+                        <!-- <h5><?php echo $answer['Choice1']; ?></h5>
                         <h5><?php echo $answer['Comment1']; ?></h5>
                         <h5><?php echo $answer['Choice2']; ?></h5>
                         <h5><?php echo $answer['Comment2']; ?></h5>
@@ -55,7 +55,7 @@ mysqli_close($link)
                         <h5><?php echo $answer['Choice16']; ?></h5>
                         <h5><?php echo $answer['Comment16']; ?></h5>
                         <h5><?php echo $answer['Choice17']; ?></h5>
-                        <h5><?php echo $answer['Comment17']; ?></h5>
+                        <h5><?php echo $answer['Comment17']; ?></h5> -->
                     </div>
                 <?php endforeach ?>
             </div>
