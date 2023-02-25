@@ -1,4 +1,3 @@
-<body>
 
 </body>
 <div id="contacts">

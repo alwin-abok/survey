@@ -11,10 +11,10 @@
 
  <body>
      <div id="main">
-         <h2>Enquête sur l’IA</h2>
-         <p>.Ci-dessous, les utilisateurs peuvent exprimer leurs points de vue sur certaines des questions.</p>
+         <h2 style="color:yellow">Enquête sur l’IA</h2>
+         <p style="color:yellow">Ci-dessous, les utilisateurs peuvent exprimer leurs points de vue sur certaines des questions.</p>
          <div>
-             <p>Après avoir terminé l’enquête, vous pouvez vous </p>
+             <p style="color:yellow">Après avoir terminé l’enquête, vous pouvez vous </p>
              <a href="index.php">
                  <h4><i><button style="background-color:aqua">déconnecter</button></i></h4>
              </a>
@@ -469,9 +469,11 @@
                  </div>
                  <div>
                      <br>
-                     <div>
-                         <button style="background-color: pink;" type="submit" name='button' onclick="insert();">Soumettre et terminer lenquête</button>
-                     </div>
+                     
+                         <a href="index.php">
+                             <button style="background-color: pink;" type="submit" name='button' onclick="insert();alert('Thank you for taking the survey!')">Soumettre et terminer lenquête</button>
+                         </a>
+
          </form>
 
 
@@ -512,23 +514,23 @@
                          url: 'index.php',
                          type: 'POST',
                          data: {
-                             q1: $("p[name=q1]").val(),
-                             q2: $("p[name=q2]").val(),
-                             q3: $("p[name=q3]").val(),
-                             q4: $("p[name=q4]").val(),
-                             q5: $("p[name=q5]").val(),
-                             q6: $("p[name=q6]").val(),
-                             q7: $("p[name=q7]").val(),
-                             q8: $("p[name=q8]").val(),
-                             q9: $("p[name=q9]").val(),
-                             q10: $("p[name=q10]").val(),
-                             q11: $("p[name=q11]").val(),
-                             q12: $("p[name=q12]").val(),
-                             q13: $("p[name=q13]").val(),
-                             q14: $("p[name=q14]").val(),
-                             q15: $("p[name=q15]").val(),
-                             q16: $("p[name=q16]").val(),
-                             q17: $("p[name=q17]").val(),
+                             q1: $("input[name=q1]").val(),
+                             q2: $("input[name=q2]").val(),
+                             q3: $("input[name=q3]").val(),
+                             q4: $("input[name=q4]").val(),
+                             q5: $("input[name=q5]").val(),
+                             q6: $("input[name=q6]").val(),
+                             q7: $("input[name=q7]").val(),
+                             q8: $("input[name=q8]").val(),
+                             q9: $("input[name=q9]").val(),
+                             q10: $("input[name=q10]").val(),
+                             q11: $("input[name=q11]").val(),
+                             q12: $("input[name=q12]").val(),
+                             q13: $("input[name=q13]").val(),
+                             q14: $("input[name=q14]").val(),
+                             q15: $("input[name=q15]").val(),
+                             q16: $("input[name=q16]").val(),
+                             q17: $("input[name=q17]").val(),
 
 
                              choice1: choice1.toString(),
