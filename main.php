@@ -1,0 +1,281 @@
+<?php
+include('./templates/head.php')
+?>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-6">
+                <div class="card text-white bg-warning mb-3" style="max-width: 36rem;max-height:50rem">
+                    <div class="card-body">
+                        <p class="card-text" name='q1'>
+                        <h4>Conception</h4>
+                        Mesures mises en oeuvre pour garantir la bonne conception
+
+                        <h5>
+                            L'objectif (finalité') du système d'IA est-il clairement défini?
+                        </h5>
+                        </p>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="choice1" value="Non Applicable"> Non Applicable</label>
+                            <label><input type="checkbox" name="choice1" value="Non/Ne sait pas"> Non/ Ne sait pas</label>
+                            <label><input type="checkbox" name="choice1" value="Point identifie' non traite">Point identifie' non traite</label>
+                            <label><input type="checkbox" name="choice1" value="En cours de mise en oeuvre"> En cours de mise en oeuvre</label>
+                            <label><input type="checkbox" name="choice1" checked value="Défini/Mis en ouvre">Défini/Mis en ouvre</label>
+
+                            <div class="form-group">
+                                <label for="comment1">Exemples de preuve:Expression des besoins,Specifications</label>
+                                <input name='comment1' value='' placeholder='Documents joints'></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-info mb-3" style="max-width: 36rem;max-height:50rem">
+                    <div class="card-body">
+                        <p class="card-text" name='q2'>Les critères d’évaluation de la performance du système d'IA ont-ils été clairement définis? </p>
+
+                        <div class="radio">
+                            <label><input type="checkbox" name="choice2" value="Non Applicable"> Non Applicable</label>
+                            <label><input type="checkbox" name="choice2" value="Non/Ne sait pas"> Non/ Ne sait pas</label>
+                            <label><input type="checkbox" name="choice2" value="Point identifie' non traite">Point identifie' non traite</label>
+                            <label><input type="checkbox" name="choice2" value="En cours de mise en oeuvre"> En cours de mise en oeuvre</label>
+                            <label><input type="checkbox" name="choice2" value="Défini/Mis en ouvre">Défini/Mis en ouvre</label>
+
+                            <div class="form-group">
+                                <label for="comment">preuve</label>
+                                <input name='comment2' value='' type="text" placeholder='Documents justificatifs'></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-white bg-primary mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q4'>Des données personnelles sont-elles traitées par le système? </p>
+                        <div class="radio">
+                            <label><input type="radio" name="choice4" value="oui" required> Oui </label>
+                            <div class="radio">
+                                <label><input type="radio" name="choice4" value="non"> Non</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-secondary mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q5'>Le traitement pourra-t-il viser directement ou indirectement des personnes vulnérables(par ex:enfants,patients, employés)? </p>
+                        <div class="radio">
+                            <input type="radio" name="choice5" value="oui" required> Oui </input>
+                            <div class="radio">
+                                <input type="radio" name="choice5" value="non"> Non</input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-success mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q6'>Le traitement pourra-t-il entraîner des consequences juridiques, financiers ou physiques sur la sante, le statut ou la sécurité des personnes visées directement ou indirectement par le système d' IA?</p>
+                        <div class="radio">
+                            <label><input type="radio" name="choice6" value="oui" required> Oui </label>
+                            <div class="radio">
+                                <label><input type="radio" name="choice6" value="non"> Non</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-danger mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q7'>Les caractéristiques(age, genre, spécificités physiques, etc.) des personnes concernées par le système d'IA ont-elles été étudiées?</p>
+                        <div class="radio">
+                            <label><input type="radio" name="choice7" value="oui" required> Oui </label>
+                            <div class="radio">
+                                <label><input type="radio" name="choice7" value="non"> Non</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Preuves</label>
+                                <input name='comment7' type="text" required value='' placeholder='Entrez votre réponse'></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-6">
+                <div class="card text-white bg-primary mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q8'>Exist-t-il une charte ou politique interne encadrant la conception et le déploiement de système s'IA?
+
+                        <div class="radio">
+                            <label><input type="radio" name="choice8" value="oui" required> Oui </label>
+                            <div class="radio">
+                                <label><input type="radio" name="choice8" value="non"> Non</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-secondary mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q9'>Les personnes impliquées dans la conception, développement et maintenance du système d'IA ont-elles été sensibilisées aux enjeux juridiques, techniques, éthiques et moraux de l'IA?</p>
+
+                        <div class="radio">
+                            <label><input type="radio" name="choice9" value="oui" required> Oui </label>
+                            <div class="radio">
+                                <label><input type="radio" name="choice9" value="non"> Non</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-success mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q10'>Les personnes en charge développement du système d'IA ,de son déploiement et de son contrôle sont-elles clairement définies?</p>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="choice10" value="oui" required> Oui </label>
+                        <div class="radio">
+                            <label><input type="radio" name="choice10" value="non"> Non</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-white bg-danger mb-3" style="max-width: 36rem;">
+                <div class="card-body">
+                    <p class="card-text" name='q11'>Les personnes physiques en charge du development du système ont-elle la formation adequate?</p>
+                    <div class="radio">
+                        <label><input type="radio" name="choice11" value="oui" required> Oui </label>
+                        <div class="radio">
+                            <label><input type="radio" name="choice11" value="non"> Non</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-white bg-warning mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q12'>Les personnes en charge du maintien du système d'IA ,de la correction des problèmes et de l'intervention sur son fonctionnement sont-elles clairement identifiées et connues de tous?</p>
+                        <div class="radio">
+                            <label><input type="radio" name="choice12" value="oui" required> Oui </label>
+                            <div class="radio">
+                                <label><input type="radio" name="choice12" value="non"> Non</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-white bg-info mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <p class="card-text" name='q13'>Un suivi est-il effectue afin d'assurer une permanence de ce service,par exemple en période de conges?</p>
+                        <div class="radio">
+                            <label><input type="radio" name="choice13" value="oui" required> Oui </label>
+                            <div class="radio">
+                                <label><input type="radio" name="choice13" value="non"> Non</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-6">
+                    <div class="card text-white bg-warning mb-3" style="max-width: 36rem;">
+                        <div class="card-body">
+                            <p class="card-text" name='q14'>quel type d'algorithme est utilise?
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="choice14" value="Apprentissage supervise"> Apprentissage supervise
+                                </label>
+                                <label><input type="checkbox" name="choice14" value="Apprentissage non-supervise"> Apprentissage non-supervise
+                                </label>
+                                <label><input type="checkbox" name="choice14" checked value="Apprentissage par renforcement">Apprentissage par renforcement
+                                </label>
+                                <label><input type="checkbox" name="choice14" value="Apprentissage continu"> Apprentissage continu
+                                </label>
+                                <label><input type="checkbox" name="choice14" value="Apprentissage fédéré"> Apprentissage fédéré
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-info mb-3" style="max-width: 36rem;">
+                        <div class="card-body">
+                            <p class="card-text" name='q15'>Des libraries Open Source on-elles été utilises ? Si oui lesquelles?
+                            <div class="radio">
+                                <label><input type="radio" name="choice15" value="oui" required> Oui </label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="choice15" value="non">Non
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comment"> </label>
+                                <input name='comment15' type="text" required value='' placeholder='Entrez votre réponse'></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 36rem;">
+                        <div class="card-body">
+                            <p class="card-text" name='q16'>Des strategies telles que par exemple la validation croisée sont elles utilises?</p>
+                            <div class="radio">
+                                <label><input type="radio" name="choice16" value="oui" required> Oui </label>
+                                <div class="radio">
+                                    <label><input type="radio" name="choice16" value="non"> Non</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Précision</label>
+                                <input name='comment16' type="text" required value='' placeholder='Entrez votre réponse'></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 36rem;">
+                        <div class="card-body">
+                            <p class="card-text" name='q3'>Quelle métriques son utilisées pour juger de la qualité des sorties du système d'IA?</p>
+                            <div class="radio">
+                                <label><input type="radio" name="choice3" value="oui" required> Oui </label>
+                                <div class="radio">
+                                    <label><input type="radio" name="choice3" value="non"> Non</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Précision</label>
+                                <input name='comment3' type="text" value='' placeholder='Entrez votre réponse'></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-danger mb-3" style="max-width: 36rem;">
+                        <div class="card-body">
+                            <p class="card-text" name='q17'>Les métriques permettent-elles de mesurer la performance du système de maniéré satisfaisante et en prenant en compte les consequences pour les personnes concernées?</p>
+                            <div class="radio">
+                                <label><input type="radio" name="choice17" value="oui" required> Oui </label>
+                                <div class="radio">
+                                    <label><input type="radio" name="choice17" value="non"> Non</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Précision</label>
+                                <input type="text" name='comment17' required value='' placeholder='Entrez votre réponse'></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<?php
+include('./templates/foot.php')
+?>
